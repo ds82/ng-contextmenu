@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/ds82/angular-contextmenu",
   "devDependencies": {
-    "angular": "1.4.6",
+    "angular": "1.4.7",
     "angular-mocks": "1.4.6",
     "browserify": "9.0.8",
     "derequire": "2.0.1",
