@@ -33,7 +33,7 @@
     "angular-mocks": "1.4.7",
     "browserify": "9.0.8",
     "derequire": "2.0.1",
-    "jasmine-core": "2.3.3",
+    "jasmine-core": "2.3.4",
     "jquery": "1.11.3",
     "karma": "0.13.10",
     "karma-browserify": "4.4.0",
