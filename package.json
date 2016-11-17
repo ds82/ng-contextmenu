@@ -43,7 +43,7 @@
     "karma-jasmine": "0.3.6",
     "karma-phantomjs-launcher": "0.2.0",
     "less": "2.5.3",
-    "semantic-release": "4.3.5"
+    "semantic-release": "6.3.2"
   },
   "dependencies": {}
 }
