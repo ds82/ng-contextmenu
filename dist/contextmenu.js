@@ -86,7 +86,7 @@ function Contextmenu($window, $rootScope, $contextmenu) {
       contextmenu: '='
     },
     restrict: 'A',
-    controller: ['$scope', '$window', '$rootScope', CotextmenuCtrl],
+    controller: ['$scope', '$window', '$rootScope', '$timeout', CotextmenuCtrl],
     link: link,
     priority: 100
   };
@@ -99,7 +99,7 @@ function Contextmenu($window, $rootScope, $contextmenu) {
   }
 }
 
-function CotextmenuCtrl($scope, $window, $rootScope) {
+function CotextmenuCtrl($scope, $window, $rootScope, $timeout) {
   console.log('init contextmenu ctrl');
 
   var pub = this;
@@ -116,6 +116,11 @@ function CotextmenuCtrl($scope, $window, $rootScope) {
       .toggleClass('dropup', isDropup(y))
       .toggleClass('open', true)
       .toggleClass('ng-hide', false);
+    $timeout(function() {
+      if (x + $element.find('ul').outerWidth() > $windowElement.width()) {
+        $element.css({left: $windowElement.width() - $element.find('ul').outerWidth()});
+      }
+    });
   }
 
   function close() {
