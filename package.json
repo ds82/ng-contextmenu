@@ -42,7 +42,7 @@
     "karma-firefox-launcher": "0.1.6",
     "karma-jasmine": "0.3.6",
     "karma-phantomjs-launcher": "0.2.0",
-    "less": "2.5.3",
+    "less": "2.7.2",
     "semantic-release": "4.3.5"
   },
   "dependencies": {}
